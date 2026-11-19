@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "difficulty": 1,
+      "text": "What is 9 + 9?",
+      "options": [
+        "17",
+        "18",
+        "19",
+        "28"
+      ],
+      "correct_answer": "18"
+    },
+    {
+      "id": "q02",
+      "difficulty": 1,
+      "text": "What is 9 + 4?",
+      "options": [
+        "11",
+        "13",
+        "15",
+        "23"
+      ],
+      "correct_answer": "13"
+    },
+    {
+      "id": "q03",
+      "difficulty": 1,
+      "text": "What is 4 + 3?",
+      "options": [
+        "4",
+        "7",
+        "12",
+        "17"
+      ],
+      "correct_answer": "7"
+    },
+    {
+      "id": "q04",
+      "difficulty": 1,
+      "text": "What is 4 + 2?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "7"
+      ],
+      "correct_answer": "6"
+    },
+    {
+      "id": "q05",
+      "difficulty": 2,
+      "text": "What is 5 + 2?",
+      "options": [
+        "7",
+        "8",
+        "10",
+        "17"
+      ],
+      "correct_answer": "7"
+    },
+    {
+      "id": "q06",
+      "difficulty": 2,
+      "text": "What is 5 + 6?",
+      "options": [
+        "8",
+        "9",
+        "11",
+        "21"
+      ],
+      "correct_answer": "11"
+    },
+    {
+      "id": "q07",
+      "difficulty": 2,
+      "text": "What is 9 + 6?",
+      "options": [
+        "13",
+        "15",
+        "17",
+        "20"
+      ],
+      "correct_answer": "15"
+    },
+    {
+      "id": "q08",
+      "difficulty": 2,
+      "text": "What is 7 + 5?",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct_answer": "12"
+    },
+    {
+      "id": "q09",
+      "difficulty": 3,
+      "text": "What is 29 x 9?",
+      "options": [
+        "259",
+        "261",
+        "263",
+        "266"
+      ],
+      "correct_answer": "261"
+    },
+    {
+      "id": "q10",
+      "difficulty": 3,
+      "text": "What is 23 x 3?",
+      "options": [
+        "66",
+        "69",
+        "70",
+        "79"
+      ],
+      "correct_answer": "69"
+    },
+    {
+      "id": "q11",
+      "difficulty": 3,
+      "text": "What is 23 x 8?",
+      "options": [
+        "182",
+        "184",
+        "185",
+        "189"
+      ],
+      "correct_answer": "184"
+    },
+    {
+      "id": "q12",
+      "difficulty": 3,
+      "text": "What is 35 x 8?",
+      "options": [
+        "278",
+        "280",
+        "282",
+        "283"
+      ],
+      "correct_answer": "280"
+    },
+    {
+      "id": "q13",
+      "difficulty": 4,
+      "text": "What is 20 x 5?",
+      "options": [
+        "97",
+        "98",
+        "100",
+        "105"
+      ],
+      "correct_answer": "100"
+    },
+    {
+      "id": "q14",
+      "difficulty": 4,
+      "text": "What is 15 x 4?",
+      "options": [
+        "57",
+        "58",
+        "60",
+        "70"
+      ],
+      "correct_answer": "60"
+    },
+    {
+      "id": "q15",
+      "difficulty": 4,
+      "text": "What is 36 x 6?",
+      "options": [
+        "215",
+        "216",
+        "217",
+        "226"
+      ],
+      "correct_answer": "216"
+    },
+    {
+      "id": "q16",
+      "difficulty": 4,
+      "text": "What is 27 x 4?",
+      "options": [
+        "106",
+        "107",
+        "108",
+        "113"
+      ],
+      "correct_answer": "108"
+    },
+    {
+      "id": "q17",
+      "difficulty": 5,
+      "text": "What comes next: 8, 14, 20, 26, ?",
+      "options": [
+        "29",
+        "32",
+        "33",
+        "34"
+      ],
+      "correct_answer": "32"
+    },
+    {
+      "id": "q18",
+      "difficulty": 5,
+      "text": "What comes next: 6, 9, 12, 15, ?",
+      "options": [
+        "17",
+        "18",
+        "19",
+        "23"
+      ],
+      "correct_answer": "18"
+    },
+    {
+      "id": "q19",
+      "difficulty": 5,
+      "text": "What comes next: 3, 6, 9, 12, ?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "25"
+      ],
+      "correct_answer": "15"
+    },
+    {
+      "id": "q20",
+      "difficulty": 5,
+      "text": "What comes next: 7, 12, 17, 22, ?",
+      "options": [
+        "25",
+        "27",
+        "28",
+        "32"
+      ],
+      "correct_answer": "27"
+    },
+    {
+      "id": "q21",
+      "difficulty": 7,
+      "text": "What comes next: 3, 6, 12, 24, ?",
+      "options": [
+        "47",
+        "48",
+        "51",
+        "58"
+      ],
+      "correct_answer": "48"
+    },
+    {
+      "id": "q22",
+      "difficulty": 7,
+      "text": "What comes next: 5, 10, 20, 40, ?",
+      "options": [
+        "79",
+        "80",
+        "82",
+        "85"
+      ],
+      "correct_answer": "80"
+    },
+    {
+      "id": "q23",
+      "difficulty": 7,
+      "text": "What comes next: 3, 9, 27, 81, ?",
+      "options": [
+        "241",
+        "243",
+        "248",
+        "253"
+      ],
+      "correct_answer": "243"
+    },
+    {
+      "id": "q24",
+      "difficulty": 8,
+      "text": "What comes next: 2, 4, 8, 16, ?",
+      "options": [
+        "29",
+        "30",
+        "32",
+        "34"
+      ],
+      "correct_answer": "32"
+    },
+    {
+      "id": "q25",
+      "difficulty": 8,
+      "text": "What comes next: 4, 12, 36, 108, ?",
+      "options": [
+        "323",
+        "324",
+        "326",
+        "334"
+      ],
+      "correct_answer": "324"
+    },
+    {
+      "id": "q26",
+      "difficulty": 8,
+      "text": "What comes next: 2, 6, 18, 54, ?",
+      "options": [
+        "159",
+        "160",
+        "162",
+        "163"
+      ],
+      "correct_answer": "162"
+    },
+    {
+      "id": "q27",
+      "difficulty": 9,
+      "text": "A price of 120 rises by 18% and then falls by 18%. What is the final price, rounded to the nearest whole number?",
+      "options": [
+        "113",
+        "116",
+        "117",
+        "126"
+      ],
+      "correct_answer": "116"
+    },
+    {
+      "id": "q28",
+      "difficulty": 9,
+      "text": "A price of 60 rises by 12% and then falls by 12%. What is the final price, rounded to the nearest whole number?",
+      "options": [
+        "58",
+        "59",
+        "61",
+        "62"
+      ],
+      "correct_answer": "59"
+    },
+    {
+      "id": "q29",
+      "difficulty": 9,
+      "text": "A price of 80 rises by 12% and then falls by 12%. What is the final price, rounded to the nearest whole number?",
+      "options": [
+        "78",
+        "79",
+        "82",
+        "89"
+      ],
+      "correct_answer": "79"
+    },
+    {
+      "id": "q30",
+      "difficulty": 10,
+      "text": "A price of 200 rises by 35% and then falls by 35%. What is the final price, rounded to the nearest whole number?",
+      "options": [
+        "173",
+        "175",
+        "176",
+        "186"
+      ],
+      "correct_answer": "176"
+    }
+  ]
+}

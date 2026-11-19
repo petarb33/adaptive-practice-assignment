@@ -1,0 +1,4 @@
+START_LEVEL = 5
+MIN_LEVEL = 1
+MAX_LEVEL = 10
+SESSION_LENGTH = 10  # questions
