@@ -8,9 +8,17 @@ difficulty level moves up or down with their answers. The task description is in
 You need Python 3.11+ and [uv](https://docs.astral.sh/uv/).
 
 ```bash
-uv sync                                                    # install dependencies (incl. dev: pytest, httpx)
+uv sync                                                    # install dependencies (incl. dev: pytest, httpx, ruff, pre-commit)
 uv run uvicorn app.main:create_app --factory --reload      # run the service on http://127.0.0.1:8000
 uv run pytest                                              # run the tests
+```
+
+Lint and format with [ruff](https://docs.astral.sh/ruff/) (settings are in `pyproject.toml`):
+
+```bash
+uv run ruff check .                                        # lint
+uv run ruff format .                                       # format
+uv run pre-commit install                                  # one-time: run ruff on every commit
 ```
 
 Interactive API docs are at http://127.0.0.1:8000/docs once the service is running.
@@ -22,7 +30,7 @@ instead of failing later.
 ### Quick example
 
 ```bash
-curl -X POST localhost:8000/sessions                       # {"session_id": "...", "level": 5}
+curl -X POST localhost:8000/sessions                       # {"session_id": "abc123", "level": 5}
 curl localhost:8000/sessions/<id>/question                 # q17, attempt 1
 curl -X POST localhost:8000/sessions/<id>/answers \
      -H "content-type: application/json" \
@@ -35,18 +43,19 @@ curl localhost:8000/sessions/<id>/results
 ```
 app/
   domain/            pure rules, no web code
-    config.py        START_LEVEL, MIN/MAX_LEVEL, SESSION_LENGTH
+    rules.py         START_LEVEL, MIN/MAX_LEVEL, SESSION_LENGTH
     models.py        Question (validated) and Session (state)
     selector.py      choosing the next question
     engine.py        applying an answer: level and retry rules, ending the session
     exceptions.py    the expected errors
+  config.py          where questions.json is: QUESTIONS_PATH, or data/questions.json
   bank.py            loading and validating questions.json, indexing by level
   store.py           in-memory session store
   service.py         uses the engine for each endpoint; builds responses
   schemas.py         request and response shapes
   api/               FastAPI routes, dependencies, error handlers
   main.py            app factory
-tests/               selector, engine, bank and API tests
+tests/               selector, engine, bank, service (session ids) and API tests
 ```
 
 The rules live in `app/domain` and don't depend on FastAPI. They are tested directly, without HTTP. The API
@@ -108,6 +117,7 @@ Errors return `{"error": "<code>", "message": "<sentence>"}`:
   after 100 attempts, which only happens if the id space is nearly full.
 
 ## What I would improve with more time
+
 - **Session lifecycle**: expire idle sessions and cap how many sessions are kept in memory.
 - **Auth**: link sessions to a learner, so one learner can't read or answer another's session.
 - **Configuration**: make the session length, start level and level range settings instead of constants.
